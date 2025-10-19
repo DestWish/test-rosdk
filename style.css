@@ -1,5 +1,4 @@
-
-.manrope-font{
+* {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -11,19 +10,18 @@ body {
     display: flex;
 }
 
-#title{
+.title{
     text-align: center;
     font-weight: 700;
     font-size: 36px;
     color: #232426;
 }
 
-#block-menu {
+.block-menu {
     box-sizing: border-box;
-    width: 320px;
+    width: 17vw;
     height: 100vh;
-    padding: 46px 22px;;
-    left: 0;
+    padding: 46px 22px;
     display: flex;
     flex-direction: column;
     gap: 58px;
@@ -48,7 +46,7 @@ nav {
 }
 
 
-#main_btn {
+.main_btn {
     background-color: #232426;
     height: 72px;
     border-radius: 24px;
@@ -57,7 +55,7 @@ nav {
 .spacer{
     flex-grow: 1;
 }
-#draps {
+.draps {
     padding: 20px 24px;
     border-radius: 24px;
     text-align: center;
@@ -69,17 +67,15 @@ nav {
 main {
     padding: 46px;
     box-sizing: border-box;
-    width: 1280px;
-    height: 100vh;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
     gap: 46px;
 }
 
-#search-block {
+.search-block {
     box-sizing: border-box;
     width: 665px;
     display: flex;
@@ -88,16 +84,15 @@ main {
     gap: 46px;
 }
 
-#search-title {
-    width: 665px;
-    height: 63px;
+h1 {
     font-weight: 800;
     font-size: 46px;
     text-align: center;
     color: #232426;
 }
 
-#inputs {
+.inputs {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -106,7 +101,7 @@ main {
 
 .search-specs {
     box-sizing: border-box;
-    width: 665px;
+    width: 100%;
     height: 67px;
     background-color: #F8F8FA;
     border: none;
@@ -116,13 +111,13 @@ main {
     color: #858994;
 }
 
-#selectors {
-    width: 665px;
+.selectors {
+    width: 100%;
     display: flex;
     gap: 16px;
 }
 
-#Course_select, #type_select {
+.select {
     box-sizing: border-box;
     height: 67px;
     background-color: #F8F8FA;
@@ -142,26 +137,26 @@ main {
     background-size: 40px;
 }
 
-#add-specs {
+.add-specs {
     color: #858994;
     text-align: center;
 }
 
-#search {
+.search {
     height: 122px;
+    width: 100%;
 }
 
-#bleb {
-    position: absolute;
-    left: calc(50% - 100px);
-    top: calc(86% - 100px);
+.bleb {
+    position: relative;
+    left: 61px;
     z-index: -1;
-
-
 }
 
-#search-btn {
-    width: 665px;
+.search-btn {
+    position: relative;
+    bottom: 29px;
+    width: 100%;
     height: 67px;
     background-color: #232426;
     border-radius: 100px;

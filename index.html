@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <aside id="block-menu">
-        <header class="manrope-font" id="title">Ирминсуль</header>
+    <aside class="block-menu">
+        <header class="title">Ирминсуль</header>
         <nav>
-            <button class="menu_btn manrope-font" id="main_btn">
+            <button class="menu_btn main_btn">
                 <svg id="home" width="74" height="76" viewBox="0 0 74 76" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1685_496)">
@@ -45,7 +48,7 @@
                 </svg>
                 <span>Главная</span>
             </button>
-            <button class="menu_btn manrope-font" id="create_btn">
+            <button class="menu_btn">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_1685_501" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32"
                         height="32">
@@ -59,7 +62,7 @@
                 </svg>
                 <span>Создать запись</span>
             </button>
-            <button class="menu_btn manrope-font" id="notification_btn">
+            <button class="menu_btn">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M27.592 17.1592H21.4645C20.9478 17.1592 20.4653 17.4174 20.1786 17.8474L18.778 19.9483C18.4914 20.3782 18.0089 20.6365 17.4921 20.6365H14.51C13.9933 20.6365 13.5107 20.3782 13.2241 19.9483L11.8235 17.8474C11.5369 17.4174 11.0543 17.1592 10.5376 17.1592H4.41016"
@@ -70,7 +73,7 @@
                 </svg>
                 <span>Уведомления</span>
             </button>
-            <button class="menu_btn manrope-font" id="profile_btn">
+            <button class="menu_btn">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_1685_512" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32"
                         height="32">
@@ -86,35 +89,35 @@
             </button>
         </nav>
         <div class="spacer"></div>
-        <div class="manrope-font" id="draps">15 драпов</div>
+        <div class="draps">15 драпов</div>
 
     </aside>
     <main>
-        <section id="search-block">
-            <h1 class="manrope-font" id="search-title">
+        <section class="search-block">
+            <h1>
                 Знания на расстоянии клика
             </h1>
-            <section id="inputs">
-                <input class="search-specs manrope-font" type="text" placeholder="ВУЗ/Колледж">
-                <input class="search-specs manrope-font" type="text" placeholder="Специальность">
-                <section id="selectors">
-                    <select name="Курс" class="search-specs manrope-font" id="Course_select">
+            <section class="inputs">
+                <input class="search-specs" type="text" placeholder="ВУЗ/Колледж">
+                <input class="search-specs" type="text" placeholder="Специальность">
+                <section class="selectors">
+                    <select name="Курс" class="search-specs select">
                         <option value="course1">Курс 1</option>
                         <option value="course2">Курс 2</option>
                         <option value="course3">Курс 3</option>
                     </select>
-                    <select name="Тип работ" class="search-specs manrope-font" id="type_select">
+                    <select name="Тип работ" class="search-specs select">
                         <option value="type1">Тип 1</option>
                         <option value="type2">Тип 2</option>
                         <option value="type3">Тип 3</option>
                     </select>
                 </section>
-                <input class="search-specs manrope-font" type="text" placeholder="Предмет">
-                <input class="search-specs manrope-font" type="text" placeholder="Ключевые слова">
-                <span class="manrope-font" id="add-specs">Дополнительные поля</span>
+                <input class="search-specs" type="text" placeholder="Предмет">
+                <input class="search-specs" type="text" placeholder="Ключевые слова">
+                <span class="add-specs">Дополнительные поля</span>
             </section>
-            <section id="search">
-                <svg id="bleb" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <section class="search">
+                <svg class="bleb" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M6.756 46.8382C8.07588 45.0437 8.72879 42.8643 8.97605 40.6505C10.6557 25.6128 23.2745 13.9268 38.5919 13.9268C53.6648 13.9268 66.1244 25.2425 68.119 39.9327C68.4779 42.5761 69.4411 45.1323 71.1359 47.1924C83.1216 61.761 73.4771 65.2141 42.9634 63.7666C-5.34451 64.6833 -1.25479 57.7291 6.756 46.8382Z"
                         fill="#B4DE3A" stroke="#232426" stroke-width="2.84941" />
@@ -128,13 +131,12 @@
                     <ellipse cx="4.01262" cy="3.1847" rx="4.01262" ry="3.1847"
                         transform="matrix(-0.38262 0.923906 -0.920788 -0.390062 43.6641 31.6841)" fill="#232426" />
                 </svg>
-                <button class="manrope-font" id="search-btn">Начать поиск!</button>
+                <button class="search-btn" >Начать поиск!</button>
             </section>
 
         </section>
     </main>
 
 </body>
-
 
 </html>
